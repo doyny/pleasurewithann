@@ -1,214 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxurious Nights with ANNE</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #f8f8f8;
-            background-color: #0a0a0a;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ANNE | Luxurious Companion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #100021;
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
 
-        .velvet-bg {
-            background: linear-gradient(rgba(90, 0, 0, 0.8), rgba(40, 0, 0, 0.9));
-            padding: 3rem 1rem;
-            text-align: center;
-            border-bottom: 1px solid #d4af37;
-        }
+    header {
+      background: linear-gradient(to right, #1f0033, #29044a);
+      text-align: center;
+      padding: 4rem 2rem;
+      border-bottom: 2px solid #c19d56;
+    }
 
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-        }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #c19d56;
+    }
 
-        .highlight {
-            color: #d4af37;
-            text-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
-        }
+    .tagline {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #e0cba8;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
 
-        header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 0.5rem;
-        }
+    .main-image {
+      display: block;
+      margin: 2rem auto;
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(193, 157, 86, 0.4);
+    }
 
-        .tagline {
-            font-size: 1.5rem;
-            font-style: italic;
-            letter-spacing: 1px;
-        }
+    .section {
+      background: #1b002f;
+      margin: 2rem 0;
+      padding: 2rem;
+      border-left: 4px solid #c19d56;
+      border-radius: 10px;
+    }
 
-        .experience-section {
-            background: rgba(20, 20, 20, 0.9);
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 5px;
-            border-left: 3px solid #d4af37;
-        }
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      color: #c19d56;
+      margin-bottom: 1rem;
+    }
 
-        .testimonials {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 3rem 0;
-        }
+    ul {
+      padding-left: 1.2rem;
+    }
 
-        .testimonial {
-            background: rgba(30, 30, 30, 0.8);
-            padding: 1.5rem;
-            border-radius: 5px;
-            position: relative;
-        }
+    ul li {
+      margin: 0.7rem 0;
+    }
 
-        .testimonial:before {
-            content: "";
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            color: #d4af37;
-            position: absolute;
-            top: -10px;
-            left: 5px;
-            opacity: 0.3;
-        }
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
 
-        .chat-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 3rem 0;
-        }
+    .testimonial {
+      background: #24003b;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #c19d56;
+    }
 
-        .chat-btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: linear-gradient(to right, #8b0000, #6a0000);
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(139, 0, 0, 0.4);
-        }
+    .testimonial p {
+      font-size: 0.95rem;
+      color: #e3d9c2;
+    }
 
-        .chat-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(139, 0, 0, 0.6);
-        }
+    .chat-buttons {
+      text-align: center;
+      margin-top: 2rem;
+    }
 
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(10, 10, 10, 0.9);
-            margin-top: 3rem;
-            font-size: 0.9rem;
-        }
+    .chat-btn {
+      display: inline-block;
+      background: #c19d56;
+      color: #1b002f;
+      padding: 0.9rem 2rem;
+      margin: 1rem;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
 
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
+    .chat-btn:hover {
+      background: #e3d9c2;
+    }
 
-            .tagline {
-                font-size: 1.2rem;
-            }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #bbb;
+      padding: 2rem 1rem;
+      background: #140022;
+      border-top: 1px solid #3a0a57;
+    }
 
-            .chat-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .tagline {
+        font-size: 1rem;
+      }
+      .chat-btn {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="velvet-bg">
-        <div class="container">
-            <h1>🔥 Luxurious Nights with <span class="highlight">ANNE</span></h1>
-            <p class="tagline">✨ Don't Just Sleep Alone — Indulge in a Night of Passion, Desire and Unforgettable Pleasure! ✨</p>
-        </div>
-    </header>
 
-    <section style="text-align: center; margin: 2rem 0;">
-        <img src="/mnt/data/file-X2pswvTsrUk72Zt18LNJpG" alt="ANNE - Luxurious Companion" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);">
+  <header>
+    <h1>ANNE | Luxurious Nights Await</h1>
+    <p class="tagline">✨ Because you deserve more than just a night... you deserve a memory ✨</p>
+  </header>
+
+  <img src="https://raw.githubusercontent.com/doyny/pleasurewithann/main/IMG-20250610-WA0077.jpg" alt="ANNE - Luxurious Companion" class="main-image" />
+
+  <main class="container">
+
+    <section class="section">
+      <h2>Why ANNE?</h2>
+      <p>Unforgettable. Elegant. Sensual. ANNE offers companionship that transcends the ordinary and dances on the edge of fantasy. Whether you're seeking deep connection, thrilling indulgence, or gentle intimacy—ANNE makes your desires her mission.</p>
     </section>
 
-    <main class="container">
-        <section class="intro">
-            <p>Why settle for an ordinary night when you can have an experience that will leave you breathless? <span class="highlight">ANNE</span> specializes in <strong>intimate, sensual, and deeply satisfying encounters</strong> designed to awaken your deepest desires. Whether you crave tender romance, electrifying passion, or an escape into pure bliss, <span class="highlight">ANNE is here to make every moment unforgettable—for just an affordable price.</span></p>
-        </section>
+    <section class="section">
+      <h2>The Experience</h2>
+      <ul>
+        <li>💫 <strong>Tailored Encounters:</strong> Every session is shaped around your preferences, desires, and mood.</li>
+        <li>🌹 <strong>Romantic Touch:</strong> Slow, delicate, and endlessly teasing—touch that lingers long after the moment ends.</li>
+        <li>💋 <strong>Allure & Affection:</strong> Kisses, whispers, and charm that awaken every inch of your being.</li>
+        <li>🔒 <strong>Discretion First:</strong> Your privacy is sacred, your trust guaranteed.</li>
+      </ul>
+    </section>
 
-        <section class="experience-section">
-            <h2>🌹 The Ultimate Companion Experience with ANNE</h2>
-            <ul>
-                <li><strong>🔥 Slow, Sensual Touch</strong> – ANNE's hands know exactly how to make your body tremble with anticipation.</li>
-                <li><strong>💋 Lips That Worship You</strong> – Every kiss from ANNE is a promise of pleasure, every whisper a tease of what's to come.</li>
-                <li><strong>👑 Treated Like Royalty</strong> – You deserve to feel desired, adored, and utterly spoiled—and ANNE delivers.</li>
-                <li><strong>🌙 Discretion Guaranteed</strong> – Your privacy is sacred, and your time with ANNE stays between you.</li>
-            </ul>
-        </section>
+    <section class="section">
+      <h2>Love Letters from Admirers</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>"ANNE is not just stunning—she’s soulful. I left feeling more alive than ever."</p>
+          <p><strong>– David, London</strong></p>
+        </div>
+        <div class="testimonial">
+          <p>"I was nervous. She made me feel like a king within minutes. The chemistry was unreal."</p>
+          <p><strong>– Leo, Paris</strong></p>
+        </div>
+        <div class="testimonial">
+          <p>"From laughter to desire, we shared everything in one unforgettable evening."</p>
+          <p><strong>– Amir, Dubai</strong></p>
+        </div>
+      </div>
+    </section>
 
-        <section class="experience-section">
-            <h2>💫 What Makes ANNE Different?</h2>
-            <ul>
-                <li><strong>✔ A Natural Seductress</strong> – ANNE doesn't just perform; she <em>connects</em>—body, mind, and soul.</li>
-                <li><strong>✔ Unmatched Energy</strong> – Her passion is contagious, and her enthusiasm is 100% real.</li>
-                <li><strong>✔ Customized Pleasure</strong> – Tell ANNE your deepest fantasy, and she'll bring it to life.</li>
-            </ul>
-        </section>
+    <section class="section">
+      <h2>Limited-Time Offer</h2>
+      <p><strong>First session? Enjoy a free glass of champagne and a slow, sensual massage to set the tone for the night. 🍾</strong></p>
+    </section>
 
-        <section>
-            <h2>📜 Love Notes from ANNE's Admirers</h2>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <p>"I've had companions before, but NOTHING like ANNE. She doesn't just satisfy—she <em>ruins</em> you for anyone else. Absolute goddess."</p>
-                    <p><strong>– Mark, Las Vegas</strong></p>
-                </div>
-                <div class="testimonial">
-                    <p>"The way ANNE moves, the way she whispers... I was under her spell from the first second. Worth every penny—and then some!"</p>
-                    <p><strong>– Daniel, Houston</strong></p>
-                </div>
-                <div class="testimonial">
-                    <p>"I booked ANNE for one hour... and ended up begging for three. She's addictive in the best way possible."</p>
-                    <p><strong>– Ryan, Miami</strong></p>
-                </div>
-                <div class="testimonial">
-                    <p>"ANNE's body is a masterpiece, but it's her confidence and charm that truly drive you wild. 11/10."</p>
-                    <p><strong>– Jason, New York</strong></p>
-                </div>
-                <div class="testimonial">
-                    <p>"I'm a man of high standards, and ANNE exceeded every single one. Pure elegance, fire, and skill."</p>
-                    <p><strong>– Nathan, Los Angeles</strong></p>
-                </div>
-            </div>
-        </section>
+    <section class="chat-buttons">
+      <a href="https://signal.me/#p/+18583804556" class="chat-btn">💬 Chat on Signal</a>
+      <a href="https://services.zangi.com/dl/conversation/1032870626" class="chat-btn">📲 Message on Zangi</a>
+    </section>
 
-        <section class="special-offer">
-            <h2>🎁 Special Offer for First-Time Visitors</h2>
-            <p><strong>Book a 2-hour session with ANNE and receive a complimentary glass of champagne 🍾 + a sensual massage to set the mood.</strong></p>
-        </section>
+  </main>
 
-        <section>
-            <h2>⏳ Don't Wait—Your Dream Night with ANNE Is One Click Away</h2>
-            <div class="chat-buttons">
-                <a href="https://signal.me/#p/+18583804556" class="chat-btn">💬 Chat Now on Signal</a>
-                <a href="https://services.zangi.com/dl/conversation/1032870626" class="chat-btn">📲 Message ANNE on Zangi</a>
-            </div>
-            <p style="text-align: center; font-style: italic;">Tonight could be the night you remember forever... Will you take the first step with ANNE?</p>
-        </section>
-    </main>
+  <footer>
+    © 2025 ANNE | Private, Luxurious Encounters | By Appointment Only
+  </footer>
 
-    <footer>
-        <p>© 2024 ANNE | Elite Intimate Experiences | By Appointment Only</p>
-    </footer>
 </body>
 </html>
